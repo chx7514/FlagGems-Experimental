@@ -21,6 +21,7 @@ from .linear import linear
 from .matmul_bf16 import matmul_bf16
 from .matmul_int8 import matmul_int8
 from .mm import mm, mm_out
+from .nonzero_numpy import nonzero_numpy
 from .repeat import repeat
 from .scatter_add import scatter_add_
 from .special_modified_bessel_k1 import (
@@ -55,4 +56,5 @@ __all__ = [
     "var_dim",
     "mm",
     "mm_out",
+    "nonzero_numpy",
 ]
