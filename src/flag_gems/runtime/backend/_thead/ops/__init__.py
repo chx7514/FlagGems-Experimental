@@ -26,6 +26,10 @@ from .reflection_pad3d_backward import reflection_pad3d_backward
 from .renorm import renorm, renorm_
 from .repeat import repeat
 from .scatter_reduce_ import scatter_reduce, scatter_reduce_, scatter_reduce_out
+from .special_chebyshev_polynomial_w import (
+    special_chebyshev_polynomial_w,
+    special_chebyshev_polynomial_w_out,
+)
 from .special_hermite_polynomial_h import special_hermite_polynomial_h
 from .tile import tile
 
@@ -48,6 +52,8 @@ __all__ = [
     "scatter_reduce",
     "scatter_reduce_",
     "scatter_reduce_out",
+    "special_chebyshev_polynomial_w",
+    "special_chebyshev_polynomial_w_out",
     "special_hermite_polynomial_h",
     "tile",
 ]
