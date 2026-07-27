@@ -27,6 +27,7 @@ from .mm import mm, mm_out
 from .narrow_copy import narrow_copy
 from .nonzero_numpy import nonzero_numpy
 from .repeat import repeat
+from .resolve_neg import resolve_neg
 from .scatter_add import scatter_add_
 from .tile import tile
 from .var import var, var_correction, var_dim
@@ -49,6 +50,7 @@ __all__ = [
     "median_dim_values",
     "median_out",
     "repeat",
+    "resolve_neg",
     "scatter_add_",
     "tile",
     "var",
