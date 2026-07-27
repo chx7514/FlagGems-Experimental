@@ -22,9 +22,13 @@ from .linalg_cholesky import linalg_cholesky
 from .linear import linear
 from .matmul_bf16 import matmul_bf16
 from .matmul_int8 import matmul_int8
+from .median import median, median_dim, median_dim_values, median_out
 from .mm import mm, mm_out
+from .narrow_copy import narrow_copy
 from .nonzero_numpy import nonzero_numpy
+from .permute_copy import permute_copy
 from .repeat import repeat
+from .resolve_neg import resolve_neg
 from .scatter_add import scatter_add_
 from .tile import tile
 from .var import var, var_correction, var_dim
@@ -42,7 +46,12 @@ __all__ = [
     "linear",
     "matmul_bf16",
     "matmul_int8",
+    "median",
+    "median_dim",
+    "median_dim_values",
+    "median_out",
     "repeat",
+    "resolve_neg",
     "scatter_add_",
     "tile",
     "var",
@@ -50,5 +59,7 @@ __all__ = [
     "var_dim",
     "mm",
     "mm_out",
+    "narrow_copy",
     "nonzero_numpy",
+    "permute_copy",
 ]
