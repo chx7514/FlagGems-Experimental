@@ -25,6 +25,7 @@ from .nonzero_numpy import nonzero_numpy
 from .reflection_pad3d_backward import reflection_pad3d_backward
 from .renorm import renorm, renorm_
 from .repeat import repeat
+from .scatter_reduce_ import scatter_reduce, scatter_reduce_, scatter_reduce_out
 from .special_hermite_polynomial_h import special_hermite_polynomial_h
 from .tile import tile
 
@@ -44,6 +45,9 @@ __all__ = [
     "renorm",
     "renorm_",
     "repeat",
+    "scatter_reduce",
+    "scatter_reduce_",
+    "scatter_reduce_out",
     "special_hermite_polynomial_h",
     "tile",
 ]
