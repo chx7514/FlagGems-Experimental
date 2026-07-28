@@ -22,6 +22,7 @@ from .attention import (
     scaled_dot_product_attention_backward,
     scaled_dot_product_attention_forward,
 )
+from .broadcast_to import broadcast_to
 from .cudnn_convolution import cudnn_convolution
 from .exponential_ import exponential_
 from .fill import fill_scalar, fill_scalar_, fill_tensor, fill_tensor_
@@ -55,6 +56,7 @@ __all__ = [
     "any",
     "any_dim",
     "any_dims",
+    "broadcast_to",
     "cudnn_convolution",
     "exponential_",
     "fill_scalar",
