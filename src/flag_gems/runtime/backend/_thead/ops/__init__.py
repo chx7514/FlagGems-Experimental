@@ -17,6 +17,9 @@ from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
 from .log_normal_ import log_normal_
 from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
+from .special_shifted_chebyshev_polynomial_w import (
+    special_shifted_chebyshev_polynomial_w,
+)
 
 __all__ = [
     "adaptive_max_pool3d_backward",
@@ -27,4 +30,5 @@ __all__ = [
     "lcm_",
     "log_normal_",
     "special_chebyshev_polynomial_u",
+    "special_shifted_chebyshev_polynomial_w",
 ]
