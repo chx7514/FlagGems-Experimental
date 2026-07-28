@@ -120,6 +120,7 @@ __all__ = [
     "conj_physical",
     "ScaleDotProductAttention",
     "SUPPORTED_FP8_DTYPE",
+    "adaptive_max_pool3d_backward",
     "any",
     "any_dim",
     "any_dims",
