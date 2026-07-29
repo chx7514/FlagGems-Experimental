@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
+from .broadcast_tensors import broadcast_tensors
 from .broadcast_to import broadcast_to
 from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
@@ -20,6 +21,7 @@ from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
 
 __all__ = [
     "adaptive_max_pool3d_backward",
+    "broadcast_tensors",
     "broadcast_to",
     "index_copy",
     "index_copy_",
