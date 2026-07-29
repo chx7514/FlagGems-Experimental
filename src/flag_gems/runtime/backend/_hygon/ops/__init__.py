@@ -32,6 +32,7 @@ from .index_copy_ import index_copy, index_copy_
 from .isin import isin
 from .matmul_bf16 import matmul_bf16
 from .matmul_int8 import matmul_int8
+from .max_pool3d_with_indices import max_pool3d_backward, max_pool3d_with_indices
 from .median import median_dim, median_dim_values
 from .mm import mm
 from .mul import mul, mul_
@@ -75,6 +76,8 @@ __all__ = [
     "isin",
     "matmul_bf16",
     "matmul_int8",
+    "max_pool3d_backward",
+    "max_pool3d_with_indices",
     "median_dim",
     "median_dim_values",
     "mul",
