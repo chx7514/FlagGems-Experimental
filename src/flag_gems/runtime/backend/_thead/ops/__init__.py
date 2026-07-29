@@ -16,6 +16,7 @@ from .broadcast_to import broadcast_to
 from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
 from .log_normal_ import log_normal_
+from .softplus_backward import softplus_backward
 from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
 
 __all__ = [
@@ -26,5 +27,6 @@ __all__ = [
     "lcm",
     "lcm_",
     "log_normal_",
+    "softplus_backward",
     "special_chebyshev_polynomial_u",
 ]
