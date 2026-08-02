@@ -17,8 +17,10 @@ from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
 from .log_normal_ import log_normal_
 from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
+from .unsafe_masked_index_put_accumulate import _unsafe_masked_index_put_accumulate
 
 __all__ = [
+    "_unsafe_masked_index_put_accumulate",
     "adaptive_max_pool3d_backward",
     "broadcast_to",
     "index_copy",
