@@ -13,12 +13,14 @@
 # limitations under the License.
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
 from .broadcast_to import broadcast_to
+from .conv_depthwise2d import _conv_depthwise2d
 from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
 from .log_normal_ import log_normal_
 from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
 
 __all__ = [
+    "_conv_depthwise2d",
     "adaptive_max_pool3d_backward",
     "broadcast_to",
     "index_copy",
