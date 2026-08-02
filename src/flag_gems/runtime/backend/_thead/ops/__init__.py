@@ -17,8 +17,10 @@ from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
 from .log_normal_ import log_normal_
 from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
+from .upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 
 __all__ = [
+    "_upsample_nearest_exact2d_backward",
     "adaptive_max_pool3d_backward",
     "broadcast_to",
     "index_copy",
