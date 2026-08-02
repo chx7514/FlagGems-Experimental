@@ -11,6 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+from ._thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
 from .broadcast_to import broadcast_to
 from .index_copy_ import index_copy, index_copy_
@@ -19,6 +20,7 @@ from .log_normal_ import log_normal_
 from .special_chebyshev_polynomial_u import special_chebyshev_polynomial_u
 
 __all__ = [
+    "_thnn_fused_lstm_cell_backward_impl",
     "adaptive_max_pool3d_backward",
     "broadcast_to",
     "index_copy",
