@@ -15,6 +15,7 @@ from ._thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
 from .broadcast_tensors import broadcast_tensors
 from .broadcast_to import broadcast_to
+from .conv_depthwise2d import _conv_depthwise2d
 from .cudnn_batch_norm_backward import cudnn_batch_norm_backward
 from .diagonal_scatter import diagonal_scatter
 from .gcd_ import gcd, gcd_
@@ -29,10 +30,13 @@ from .special_erfinv import special_erfinv, special_erfinv_, special_erfinv_out
 from .special_shifted_chebyshev_polynomial_w import (
     special_shifted_chebyshev_polynomial_w,
 )
+from .unsafe_masked_index_put_accumulate import _unsafe_masked_index_put_accumulate
 from .upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 
 __all__ = [
+    "_conv_depthwise2d",
     "_thnn_fused_lstm_cell_backward_impl",
+    "_unsafe_masked_index_put_accumulate",
     "_upsample_nearest_exact2d_backward",
     "adaptive_max_pool3d_backward",
     "broadcast_tensors",
