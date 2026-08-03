@@ -30,6 +30,7 @@ from .gelu import gelu, gelu_
 from .hadamard_transform import hadamard_transform
 from .index_copy_ import index_copy, index_copy_
 from .isin import isin
+from .log_normal_ import log_normal_
 from .matmul_bf16 import matmul_bf16
 from .matmul_int8 import matmul_int8
 from .max_pool3d_with_indices import max_pool3d_backward, max_pool3d_with_indices
@@ -48,6 +49,10 @@ from .randperm import randperm
 from .renorm_ import renorm_
 from .silu import silu, silu_, silu_backward
 from .sort import sort, sort_stable
+from .special_chebyshev_polynomial_w import (
+    special_chebyshev_polynomial_w,
+    special_chebyshev_polynomial_w_out,
+)
 from .unique import _unique2
 from .upsample_nearest2d import upsample_nearest2d
 
@@ -74,6 +79,7 @@ __all__ = [
     "index_copy",
     "index_copy_",
     "isin",
+    "log_normal_",
     "matmul_bf16",
     "matmul_int8",
     "max_pool3d_backward",
@@ -99,5 +105,7 @@ __all__ = [
     "silu_backward",
     "sort",
     "sort_stable",
+    "special_chebyshev_polynomial_w",
+    "special_chebyshev_polynomial_w_out",
     "upsample_nearest2d",
 ]
