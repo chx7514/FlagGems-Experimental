@@ -44,6 +44,7 @@ from .div import (
     trunc_divide,
     trunc_divide_,
 )
+from .broadcast_tensors import broadcast_tensors
 from .broadcast_to import broadcast_to
 from .cudnn_convolution import cudnn_convolution
 from .diff import diff
@@ -134,6 +135,7 @@ __all__ = [
     "diff",
     "div_mode",
     "div_mode_",
+    "broadcast_tensors",
     "broadcast_to",
     "cudnn_convolution",
     "diff",
