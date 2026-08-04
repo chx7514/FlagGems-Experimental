@@ -105,6 +105,8 @@ __all__ = [
     "lgamma_",
     "linalg_svdvals",
     "log_sigmoid_forward",
+    "lgamma",
+    "lgamma_",
     "log_softmax",
     "log_softmax_backward",
     "logical_or",
