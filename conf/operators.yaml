@@ -1329,6 +1329,7 @@ ops:
       - avg_pool3d_backward
     labels:
       - aten
+      - KernelGen
     kind:
       - NeuralNetwork
     stages:
