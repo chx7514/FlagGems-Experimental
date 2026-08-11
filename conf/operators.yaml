@@ -8858,6 +8858,7 @@ ops:
       - repeat
     labels:
       - aten
+      - KernelGen
     kind:
       - Tensor
     stages:
