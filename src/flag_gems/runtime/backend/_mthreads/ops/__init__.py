@@ -31,6 +31,7 @@ from .celu import celu
 from .clip_ import clip_
 from .conv2d import conv2d
 from .deg2rad_ import deg2rad_
+from .diagonal_scatter import diagonal_scatter
 from .div import (
     div_mode,
     div_mode_,
@@ -133,6 +134,7 @@ __all__ = [
     "clip_",
     "conv2d",
     "deg2rad_",
+    "diagonal_scatter",
     "dropout",
     "dropout_backward",
     "erfinv",
