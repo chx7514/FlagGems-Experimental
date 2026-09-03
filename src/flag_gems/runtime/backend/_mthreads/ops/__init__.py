@@ -28,6 +28,7 @@ from .argmin import argmin
 from .batch_norm import batch_norm, batch_norm_backward
 from .bucketize import bucketize
 from .celu import celu
+from .channel_shuffle import channel_shuffle
 from .clip_ import clip_
 from .conv2d import conv2d
 from .deg2rad_ import deg2rad_
@@ -131,6 +132,7 @@ __all__ = [
     "bucketize",
     "celu",
     # "celu_",
+    "channel_shuffle",
     "clip_",
     "conv2d",
     "deg2rad_",
