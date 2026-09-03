@@ -22,6 +22,7 @@ from .argmin import argmin
 from .batch_norm import batch_norm, batch_norm_backward
 from .bucketize import bucketize
 from .celu import celu
+from .clip_ import clip_
 from .conv2d import conv2d
 from .deg2rad_ import deg2rad_
 from .div import (
@@ -112,6 +113,7 @@ __all__ = [
     "bucketize",
     "celu",
     # "celu_",
+    "clip_",
     "conv2d",
     "deg2rad_",
     "dropout",
