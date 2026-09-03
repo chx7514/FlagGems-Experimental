@@ -23,6 +23,7 @@ from .batch_norm import batch_norm, batch_norm_backward
 from .bucketize import bucketize
 from .celu import celu
 from .conv2d import conv2d
+from .deg2rad_ import deg2rad_
 from .div import (
     div_mode,
     div_mode_,
@@ -112,6 +113,7 @@ __all__ = [
     "celu",
     # "celu_",
     "conv2d",
+    "deg2rad_",
     "dropout",
     "dropout_backward",
     "erfinv",
