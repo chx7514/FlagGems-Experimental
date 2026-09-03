@@ -47,6 +47,7 @@ from .index_add import index_add, index_add_
 from .index_copy_ import index_copy, index_copy_
 from .index_put import _index_put_impl_, index_put, index_put_
 from .index_select import index_select
+from .lcm import lcm
 from .linalg_cholesky import linalg_cholesky
 from .log import log
 from .log2_ import log2_
@@ -140,6 +141,7 @@ __all__ = [
     "index_put_",
     "_index_put_impl_",
     "index_select",
+    "lcm",
     "linalg_cholesky",
     "log",
     "log10",
