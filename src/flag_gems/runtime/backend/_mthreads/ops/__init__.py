@@ -24,6 +24,7 @@ from .amax import amax
 from .any import any, any_dim, any_dims
 from .arange import arange, arange_start
 from .arctan2 import arctan2
+from .arctan2_ import arctan2_
 from .argmin import argmin
 from .atan2 import atan2
 from .atan2_ import atan2_
@@ -139,6 +140,7 @@ __all__ = [
     "arange",
     "arange_start",
     "arctan2",
+    "arctan2_",
     "argmin",
     "atan2",
     "atan2_",

@@ -13,10 +13,12 @@
 # limitations under the License.
 
 
+from ._conv_depthwise2d import _conv_depthwise2d
 from ._scaled_dot_product_fused_attention_overrideable import (
     _scaled_dot_product_fused_attention_overrideable,
 )
 from ._unsafe_masked_index_put_accumulate import _unsafe_masked_index_put_accumulate
+from ._upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
 from .addmm_ import addmm_
 from .broadcast_tensors import broadcast_tensors
@@ -35,6 +37,7 @@ from .linalg_svdvals import linalg_svdvals
 from .linear_backward import linear_backward
 from .log_normal_ import log_normal_, log_normal_heur_block, log_normal_heur_num_warps
 from .log_sigmoid_backward import log_sigmoid_backward, log_sigmoid_backward_out
+from .matmul_bias_activation import matmul_bias_activation
 from .max_pool3d_with_indices_backward import max_pool3d_with_indices_backward
 from .mvlgamma import mvlgamma
 from .nll_loss_backward import nll_loss_backward
@@ -56,6 +59,7 @@ from .special_hermite_polynomial_h import (
     special_hermite_polynomial_h,
     special_hermite_polynomial_h_tensor_tensor,
 )
+from .special_legendre_polynomial_p import special_legendre_polynomial_p
 from .special_multigammaln import special_multigammaln
 from .special_shifted_chebyshev_polynomial_w import (
     special_shifted_chebyshev_polynomial_w,
@@ -64,8 +68,10 @@ from .tile import tile
 from .unbind_copy import unbind_copy
 
 __all__ = [
+    "_conv_depthwise2d",
     "_scaled_dot_product_fused_attention_overrideable",
     "_unsafe_masked_index_put_accumulate",
+    "_upsample_nearest_exact2d_backward",
     "adaptive_max_pool3d_backward",
     "addmm_",
     "broadcast_tensors",
@@ -92,6 +98,7 @@ __all__ = [
     "log_sigmoid_backward",
     "log_sigmoid_backward_out",
     "make_3d_for_bn",
+    "matmul_bias_activation",
     "max_pool3d_with_indices_backward",
     "mvlgamma",
     "nll_loss_backward",
@@ -114,6 +121,7 @@ __all__ = [
     "special_gammaln",
     "special_hermite_polynomial_h",
     "special_hermite_polynomial_h_tensor_tensor",
+    "special_legendre_polynomial_p",
     "special_multigammaln",
     "special_shifted_chebyshev_polynomial_w",
     "tile",
