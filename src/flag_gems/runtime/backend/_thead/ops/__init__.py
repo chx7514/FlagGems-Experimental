@@ -13,6 +13,7 @@
 # limitations under the License.
 
 
+from ._unsafe_masked_index_put_accumulate import _unsafe_masked_index_put_accumulate
 from ._upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
 from .addmm_ import addmm_
@@ -23,6 +24,7 @@ from .cudnn_batch_norm_backward import cudnn_batch_norm_backward, make_3d_for_bn
 from .cudnn_convolution import cudnn_convolution
 from .diagonal_scatter import diagonal_scatter
 from .embedding_dense_backward import embedding_dense_backward
+from .erfc import erfc
 from .gcd_ import gcd, gcd_
 from .index_copy_ import index_copy, index_copy_
 from .lcm import lcm, lcm_
@@ -31,6 +33,7 @@ from .linalg_svdvals import linalg_svdvals
 from .linear_backward import linear_backward
 from .log_normal_ import log_normal_, log_normal_heur_block, log_normal_heur_num_warps
 from .log_sigmoid_backward import log_sigmoid_backward, log_sigmoid_backward_out
+from .mvlgamma import mvlgamma
 from .nll_loss_backward import nll_loss_backward
 from .nonzero_numpy import nonzero_numpy
 from .reflection_pad3d_backward import reflection_pad3d_backward
@@ -45,10 +48,12 @@ from .special_chebyshev_polynomial_w import (
 )
 from .special_erfinv import special_erfinv, special_erfinv_, special_erfinv_out
 from .special_gammainc import special_gammainc
+from .special_gammaln import special_gammaln
 from .special_hermite_polynomial_h import (
     special_hermite_polynomial_h,
     special_hermite_polynomial_h_tensor_tensor,
 )
+from .special_multigammaln import special_multigammaln
 from .special_shifted_chebyshev_polynomial_w import (
     special_shifted_chebyshev_polynomial_w,
 )
@@ -56,6 +61,7 @@ from .tile import tile
 from .unbind_copy import unbind_copy
 
 __all__ = [
+    "_unsafe_masked_index_put_accumulate",
     "_upsample_nearest_exact2d_backward",
     "adaptive_max_pool3d_backward",
     "addmm_",
@@ -67,6 +73,7 @@ __all__ = [
     "cudnn_convolution",
     "diagonal_scatter",
     "embedding_dense_backward",
+    "erfc",
     "gcd",
     "gcd_",
     "index_copy",
@@ -82,6 +89,7 @@ __all__ = [
     "log_sigmoid_backward",
     "log_sigmoid_backward_out",
     "make_3d_for_bn",
+    "mvlgamma",
     "nll_loss_backward",
     "nonzero_numpy",
     "reflection_pad3d_backward",
@@ -99,8 +107,10 @@ __all__ = [
     "special_erfinv_",
     "special_erfinv_out",
     "special_gammainc",
+    "special_gammaln",
     "special_hermite_polynomial_h",
     "special_hermite_polynomial_h_tensor_tensor",
+    "special_multigammaln",
     "special_shifted_chebyshev_polynomial_w",
     "tile",
     "unbind_copy",
