@@ -12,8 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from ._flash_attention_forward import _flash_attention_forward
+
 # Hygon internal implementation for attention
 from ._scaled_dot_product_flash_attention import _scaled_dot_product_flash_attention
+from .adaptive_avg_pool2d_backward import adaptive_avg_pool2d_backward
 from .adaptive_max_pool3d_backward import adaptive_max_pool3d_backward
 from .addr import addr
 from .any import any, any_dim, any_dims
@@ -128,8 +131,10 @@ from .weight_norm import (
 )
 
 __all__ = [
+    "_flash_attention_forward",
     "_scaled_dot_product_flash_attention",
     "_unique2",
+    "adaptive_avg_pool2d_backward",
     "adaptive_max_pool3d_backward",
     "avg_pool3d_backward",
     "broadcast_tensors",
